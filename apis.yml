@@ -1,8 +1,31 @@
 aid: agrostar
 name: Agrostar
-description: 'Agrostar is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: mobile. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  AgroStar (Ulink Agritech Private Ltd) is a leading Indian agri-tech company on a
+  mission to help farmers grow more and earn more, sustainably. Founded in Pune, it
+  operates India's largest digital farmer network and agri-inputs platform, serving
+  millions of farmers across Gujarat, Rajasthan, Maharashtra, Madhya Pradesh and
+  Uttar Pradesh through its Kisan (AgriDoctor) mobile app. AgroStar builds a connected
+  ecosystem across the agricultural value chain — farm advisory, quality agri-inputs,
+  omnichannel retail access and global market linkages — backed by data and agronomy
+  expertise, with a focus on climate-smart agriculture, water conservation and reducing
+  food waste. It is a portfolio company of Accel. AgroStar's public corporate site is
+  Wix-powered and exposes a hosted Model Context Protocol (MCP) endpoint plus an
+  /llms.txt for agentic AI access to public site content; it does not publish a
+  developer-facing product API.
 url: https://raw.githubusercontent.com/api-evangelist/agrostar/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static.wixstatic.com/media/97db43_dc476728cd6b43c69a97301defb926f3~mv2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/97db43_dc476728cd6b43c69a97301defb926f3~mv2.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -15,6 +38,13 @@ modified: '2026-07-17'
 tags:
 - Company
 - Mobile
+- Agriculture
+- AgriTech
+- Farming
+- India
+- Farmer Advisory
+- Agri Inputs
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +54,25 @@ maintainers:
 common:
 - type: Website
   url: http://corporate.agrostar.in
+- type: About
+  url: https://corporate.agrostar.in/about-us
+- type: Blog
+  url: https://corporate.agrostar.in/blog
+- type: Support
+  url: https://corporate.agrostar.in/contact
+- type: GitHubOrganization
+  url: https://github.com/agrostar
+- type: MCPServer
+  name: AgroStar Site MCP
+  url: mcp/agrostar-mcp.yml
+- type: LLMsTxt
+  url: llms/agrostar-llms.txt
+- type: WellKnown
+  url: well-known/agrostar-well-known.yml
+- type: DomainSecurity
+  url: security/agrostar-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

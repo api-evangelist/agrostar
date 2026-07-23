@@ -1,0 +1,22 @@
+generated: '2026-07-17'
+method: searched
+host: https://corporate.agrostar.in
+note: >-
+  No standard /.well-known/ discovery documents are published; every probed path
+  returned HTTP 400 (Wix host). The site does, however, publish /llms.txt (200)
+  advertising a hosted MCP endpoint — captured in llms/ and mcp/.
+documents:
+  - path: /.well-known/security.txt
+    status: 400
+  - path: /.well-known/openid-configuration
+    status: 400
+  - path: /.well-known/oauth-authorization-server
+    status: 400
+  - path: /.well-known/api-catalog
+    status: 400
+  - path: /.well-known/ai-plugin.json
+    status: 400
+other:
+  - path: /llms.txt
+    status: 200
+    file: ../llms/agrostar-llms.txt
